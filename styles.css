@@ -2,12 +2,14 @@ body {
   font-family: Arial, sans-serif;
   background: #d3d4d9;
   text-align: center;
+  margin: 0;
   padding: 20px;
 }
 
 .container {
   max-width: 400px;
-  margin: auto;
+  width: 90%;
+  margin: 40px auto;
   background: white;
   padding: 30px;
   border-radius: 20px;
@@ -16,10 +18,13 @@ body {
 
 h1 {
   margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #222;
 }
 
 p {
   margin-bottom: 20px;
+  color: #444;
 }
 
 .link {
@@ -29,10 +34,11 @@ p {
   background: #0077ff;
   color: white;
   text-decoration: none;
-  padding: 12px;
+  padding: 14px;
   margin: 10px 0;
   border-radius: 10px;
-  transition: background 0.3s;
+  font-size: 1rem;
+  transition: background 0.3s ease;
 }
 
 .link:hover {
@@ -40,8 +46,31 @@ p {
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   margin-right: 10px;
   filter: invert(100%);
+}
+
+/* 🌐 Mobil cihazlar üçün media query */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .link {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
 }
